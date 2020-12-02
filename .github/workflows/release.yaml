@@ -1,0 +1,20 @@
+name: Release
+
+on:
+  workflow_dispatch
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  release_job:
+    name: Release Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: |
+          npm i
+          npx semantic-release

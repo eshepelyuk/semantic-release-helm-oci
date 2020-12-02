@@ -1,0 +1,20 @@
+branches:
+  - main
+
+tagFormat: "${version}"
+
+plugins:
+  - '@semantic-release/commit-analyzer'
+  - 'semantic-release-commitlint'
+  -
+    - "@semantic-release/release-notes-generator"
+    - preset: conventionalcommits
+  - '@semantic-release/npm'
+  -
+    - "@semantic-release/git"
+    - assets: []
+      messsage: false
+  -
+    - "@semantic-release/github"
+    - successComment: false
+      failComment: false

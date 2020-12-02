@@ -1,0 +1,22 @@
+name: Continous Integration
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '*.md'
+      - '.github/workflows/release.yaml'
+
+jobs:
+  ci_job:
+    name: CI Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          npm i
+          npx semantic-release -p semantic-release-commitlint
