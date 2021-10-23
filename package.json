@@ -9,6 +9,9 @@
   ],
   "author": "Ievgenii Shepeliuk <eshepelyuk@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "execa": "^5.0.0",
     "isexe": "^2.0.0",
