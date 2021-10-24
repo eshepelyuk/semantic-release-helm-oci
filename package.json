@@ -21,8 +21,6 @@
     "@commitlint/cli": "^13.2.1",
     "@commitlint/config-conventional": "^13.2.0",
     "@semantic-release/git": "^10.0.0",
-    "@semantic-release/github": "^8.0.1",
-    "@semantic-release/npm": "^8.0.2",
     "conventional-changelog-conventionalcommits": "^4.6.1",
     "semantic-release-commitlint": "^1.2.2"
   }
