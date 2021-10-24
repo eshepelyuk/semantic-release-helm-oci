@@ -1,3 +1,4 @@
+
 # semantic-release plugin for Helm OCI
 
 [![Current](https://img.shields.io/github/v/tag/eshepelyuk/semantic-release-helm-oci?logo=github&sort=semver&style=for-the-badge&label=current)](https://github.com/eshepelyuk/semantic-release-helm-oci/releases/latest)
