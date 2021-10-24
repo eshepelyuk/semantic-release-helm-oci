@@ -9,7 +9,7 @@ for publishing Helm charts to OCI compatible registries.
 
 | Step               | Description                                                  |
 |--------------------|--------------------------------------------------------------|
-| `verifyConditions` | Verify required configuraiotn and login to Helm registry.    |
+| `verifyConditions` | Verify required configuration options and login to Helm registry.    |
 | `prepare`          | Package Helm chart to local folder.                          |
 | `publish`          | Publish Helm chart to OCI registry.                          |
 
@@ -23,7 +23,8 @@ npm install @eshepelyuk/semantic-release-helm-oci -D
 
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
-| registry          | URI of a container registry. e.g. ghcr.io/MyOrg/mychart           | string    | undefined |
+| registry          | URL of a container registry, with `oci://` schema,                |           |           |
+|                   | e.g. ghcr.io/MyOrg/mychart                                        | string    | undefined |
 
 ### Credentials for OCI registry
 
