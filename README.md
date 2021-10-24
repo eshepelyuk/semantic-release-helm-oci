@@ -41,7 +41,7 @@ Using json config format
 {
   "plugins": [
     [
-      "semantic-release-helm-oci",
+      "@eshepelyuk/semantic-release-helm-oci",
       {
         "registry": "ghcr.io/MyOrg/mypath"
       }
