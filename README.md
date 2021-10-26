@@ -37,7 +37,7 @@ export REGISTRY_PASSWORD=<PASSWORD>
 
 ## Examples
 
-Using json config format
+##s json config
 
 ```json
 {
@@ -45,18 +45,18 @@ Using json config format
     [
       "@eshepelyuk/semantic-release-helm-oci",
       {
-        "registry": "ghcr.io/MyOrg/mypath"
+        "registry": "oci://ghcr.io/eshepelyuk/abc"
       }
     ]
   ]
 }
 ```
 
-or via yaml config
+##s yaml config
 
 ```yaml
 plugins:
   -
     - '@eshepelyuk/semantic-release-helm-oci'
-    - registry: ghcr.io/MyOrg/mypath
+    - registry: oci://ghcr.io/eshepelyuk/abc
 ```
