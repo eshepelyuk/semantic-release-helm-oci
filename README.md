@@ -24,7 +24,7 @@ npm install @eshepelyuk/semantic-release-helm-oci -D
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
 | registry          | URL of a container registry, with `oci://` schema,                |           |           |
-|                   | e.g. ghcr.io/MyOrg/mychart                                        | string    | undefined |
+|                   | e.g. oci://ghcr.io/eshepelyuk/abc                                 | string    | undefined |
 
 ### Credentials for OCI registry
 
