@@ -37,7 +37,7 @@ export REGISTRY_PASSWORD=<PASSWORD>
 
 ## Examples
 
-##s json config
+### json config
 
 ```json
 {
@@ -52,7 +52,7 @@ export REGISTRY_PASSWORD=<PASSWORD>
 }
 ```
 
-##s yaml config
+### yaml config
 
 ```yaml
 plugins:
