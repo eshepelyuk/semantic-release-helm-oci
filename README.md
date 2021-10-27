@@ -49,8 +49,8 @@ plugins:
 Credentials for OCI registry are passed through environment variables:
 
 ```bash
-export REGISTRY_USERNAME=${...}
-export REGISTRY_PASSWORD=${...}
+export REGISTRY_USERNAME=<registry username value>
+export REGISTRY_PASSWORD=<registry password value>
 ```
 
 ### Options
