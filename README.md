@@ -16,10 +16,10 @@ for publishing Helm charts to OCI compatible registries.
 ## Installation
 
 ```bash
-npm install @eshepelyuk/semantic-release-helm-oci -D
+npm i @eshepelyuk/semantic-release-helm-oci -D
 ```
 
-## Configuration
+## Usag
 
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
