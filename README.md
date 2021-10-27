@@ -1,7 +1,7 @@
 
 # semantic-release-helm-oci
 
-[![Current](https://img.shields.io/github/v/tag/eshepelyuk/semantic-release-helm-oci?logo=github&sort=semver&style=for-the-badge&label=current)](https://github.com/eshepelyuk/semantic-release-helm-oci/releases/latest)
+[![NPM](https://img.shields.io/npm/v/@eshepelyuk/semantic-release-helm-oci?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@eshepelyuk/semantic-release-helm-oci)
 [![MIT License](https://img.shields.io/github/license/eshepelyuk/semantic-release-helm-oci?logo=mit&style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 [semantic-release](https://github.com/semantic-release/semantic-release) plugin
