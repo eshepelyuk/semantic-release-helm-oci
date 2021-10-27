@@ -1,5 +1,5 @@
 
-# semantic-release plugin for Helm OCI
+# semantic-release-helm-oc
 
 [![Current](https://img.shields.io/github/v/tag/eshepelyuk/semantic-release-helm-oci?logo=github&sort=semver&style=for-the-badge&label=current)](https://github.com/eshepelyuk/semantic-release-helm-oci/releases/latest)
 [![MIT License](https://img.shields.io/github/license/eshepelyuk/semantic-release-helm-oci?logo=mit&style=for-the-badge)](https://opensource.org/licenses/MIT)
