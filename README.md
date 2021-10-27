@@ -43,6 +43,11 @@ plugins:
     - registry: oci://ghcr.io/eshepelyuk/abc
 ```
 
+With this example during release, a Helm chart will be packaged and published to
+`oci://ghcr.io/eshepelyuk/abc/${CHART_NAME}:${CHART_VERSION}`,
+where `${CHART_NAME}` is a chart name from `Chart.yaml`
+and `${CHART_VERSION}` is a version detected by semantic-release.
+
 ## Configuration
 
 ### Environment variables
