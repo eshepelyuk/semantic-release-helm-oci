@@ -1,4 +1,3 @@
-
 # semantic-release-helm-oci
 
 [semantic-release](https://github.com/semantic-release/semantic-release) plugin
@@ -22,22 +21,6 @@ npm i @eshepelyuk/semantic-release-helm-oci -D
 
 ## Usage
 
-| Option            | Description                                                       | Type      | Default   |
-| ------------------|-------------------------------------------------------------------|-----------|-----------|
-| registry          | URL of a container registry, with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc`                                 | string    | undefined |
-| skipAppVersion | Don't update `appVersion` in Chart.yaml | boolean | false |
-
-### Credentials for OCI registry
-
-Passed through environment variables:
-
-```bash
-export REGISTRY_USERNAME=${...}
-export REGISTRY_PASSWORD=${...}
-```
-
-## Examples
-
 #### **`.releaserc.json`**
 ```json
 {
@@ -59,4 +42,18 @@ plugins:
   -
     - '@eshepelyuk/semantic-release-helm-oci'
     - registry: oci://ghcr.io/eshepelyuk/abc
+```
+
+| Option            | Description                                                       | Type      | Default   |
+| ------------------|-------------------------------------------------------------------|-----------|-----------|
+| registry          | URL of a container registry, with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc`                                 | string    | undefined |
+| skipAppVersion | Don't update `appVersion` in Chart.yaml | boolean | false |
+
+### Credentials for OCI registry
+
+Passed through environment variables:
+
+```bash
+export REGISTRY_USERNAME=${...}
+export REGISTRY_PASSWORD=${...}
 ```
