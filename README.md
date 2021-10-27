@@ -24,7 +24,7 @@ npm i @eshepelyuk/semantic-release-helm-oci -D
 The plugin can be configured in the [**semantic-release** configuration file
 ](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration):
 
-##### **`.releaserc.json`**
+**`.releaserc.json`**
 ```json
 {
   "plugins": [
