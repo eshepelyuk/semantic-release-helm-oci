@@ -31,8 +31,8 @@ npm install @eshepelyuk/semantic-release-helm-oci -D
 Passed through environment variables:
 
 ```bash
-export REGISTRY_USERNAME=<USERNAME>
-export REGISTRY_PASSWORD=<PASSWORD>
+export REGISTRY_USERNAME=${...}
+export REGISTRY_PASSWORD=${...}
 ```
 
 ## Examples
