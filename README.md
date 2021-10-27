@@ -51,13 +51,13 @@ Credentials for OCI registry authentification are passed through environment var
 
 | Variable            | Description                         |
 | ------------------- | ----------------------------------- |
-| `REGISTRY_USERNAME` | **Required** OCI registry username. |
-| `REGISTRY_PASSWORD` | **Required** OCI registry password. |
+| `REGISTRY_USERNAME` | **Required.** OCI registry username. |
+| `REGISTRY_PASSWORD` | **Required.** OCI registry password. |
 
 ### Options
 
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
-| `registry`        | **Required** Registry URL with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc`. | string    | undefined |
+| `registry`        | **Required.** Registry URL with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc`. | string    | undefined |
 | `skipAppVersion`  | Don't update `appVersion` in Chart.yaml.                          | boolean   | false     |
 
