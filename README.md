@@ -44,16 +44,19 @@ plugins:
     - registry: oci://ghcr.io/eshepelyuk/abc
 ```
 
-| Option            | Description                                                       | Type      | Default   |
-| ------------------|-------------------------------------------------------------------|-----------|-----------|
-| registry          | URL of a container registry, with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc`                                 | string    | undefined |
-| skipAppVersion | Don't update `appVersion` in Chart.yaml | boolean | false |
+## Configuration
 
-### Credentials for OCI registry
-
-Passed through environment variables:
+Credentials for OCI registry are passed through environment variables:
 
 ```bash
 export REGISTRY_USERNAME=${...}
 export REGISTRY_PASSWORD=${...}
 ```
+
+### Options
+
+| Option            | Description                                                       | Type      | Default   |
+| ------------------|-------------------------------------------------------------------|-----------|-----------|
+| `registry`        | Registry URL with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc` | string    | undefined |
+| `skipAppVersion`  | Don't update `appVersion` in Chart.yaml | boolean | false |
+
