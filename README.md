@@ -28,18 +28,14 @@ The plugin can be configured in the [**semantic-release** configuration file
 ```json
 {
   "plugins": [
-    [
-      "@eshepelyuk/semantic-release-helm-oci",
-      {
-        "registry": "oci://ghcr.io/eshepelyuk/abc"
-      }
-    ]
+    ["@eshepelyuk/semantic-release-helm-oci", {
+      "registry": "oci://ghcr.io/eshepelyuk/abc"
+    }]
   ]
 }
 ```
 
 #### **`.releaserc.yaml`**
-
 ```yaml
 plugins:
   -
