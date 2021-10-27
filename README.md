@@ -7,11 +7,11 @@ for publishing Helm charts to OCI compatible registries.
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge)](https://github.com/semantic-release/semantic-release)
 [![MIT License](https://img.shields.io/github/license/eshepelyuk/semantic-release-helm-oci?logo=mit&style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-| Step               | Description                                                  |
-|--------------------|--------------------------------------------------------------|
-| `verifyConditions` | Verify required configuration options and login to Helm registry.    |
-| `prepare`          | Package Helm chart to local folder.                          |
-| `publish`          | Publish Helm chart to OCI registry.                          |
+| Step               | Description                                              |
+| ------------------ | -------------------------------------------------------- |
+| `verifyConditions` | Verify plugin configuration and login to Helm registry.  |
+| `prepare`          | Package Helm chart to local folder.                      |
+| `publish`          | Publish Helm chart to OCI registry.                      |
 
 ## Installation
 
@@ -43,9 +43,9 @@ plugins:
     - registry: oci://ghcr.io/eshepelyuk/abc
 ```
 
-With this example during release, a Helm chart will be packaged and published to
-`oci://ghcr.io/eshepelyuk/abc/${CHART_NAME}:${CHART_VERSION}`,
-where `${CHART_NAME}` is a chart name from `Chart.yaml`
+With this example, for each release, a Helm chart will be published to
+`oci://ghcr.io/eshepelyuk/abc/${CHART_NAME}:${CHART_VERSION}`.
+Where `${CHART_NAME}` is a name from `Chart.yaml`
 and `${CHART_VERSION}` is a version detected by semantic-release.
 
 ## Configuration
@@ -54,8 +54,8 @@ and `${CHART_VERSION}` is a version detected by semantic-release.
 
 Credentials for OCI registry authentification are passed through environment variables:
 
-| Variable            | Description                         |
-| ------------------- | ----------------------------------- |
+| Variable            | Description                          |
+| ------------------- | ------------------------------------ |
 | `REGISTRY_USERNAME` | **Required.** OCI registry username. |
 | `REGISTRY_PASSWORD` | **Required.** OCI registry password. |
 
