@@ -21,6 +21,9 @@ npm i @eshepelyuk/semantic-release-helm-oci -D
 
 ## Usage
 
+The plugin can be configured in the [**semantic-release** configuration file
+](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration):
+
 #### **`.releaserc.json`**
 ```json
 {
@@ -45,6 +48,8 @@ plugins:
 ```
 
 ## Configuration
+
+### Credentials
 
 Credentials for OCI registry are passed through environment variables:
 
