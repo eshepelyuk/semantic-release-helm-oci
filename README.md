@@ -47,7 +47,7 @@ plugins:
 
 ### Environment variables
 
-Credentials for OCI registry authentifications are passed through environment variables:
+Credentials for OCI registry authentification are passed through environment variables:
 
 | Variable            | Description                         |
 | ------------------- | ----------------------------------- |
@@ -58,6 +58,6 @@ Credentials for OCI registry authentifications are passed through environment va
 
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
-| `registry`        | Registry URL with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc` | string    | undefined |
-| `skipAppVersion`  | Don't update `appVersion` in Chart.yaml | boolean | false |
+| `registry`        | **Required** Registry URL with `oci://` schema, e.g. `oci://ghcr.io/eshepelyuk/abc`. | string    | undefined |
+| `skipAppVersion`  | Don't update `appVersion` in Chart.yaml.                          | boolean   | false     |
 
