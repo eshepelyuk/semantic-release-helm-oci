@@ -48,6 +48,10 @@ With this example, for each release, a Helm chart will be published to
 Where `${CHART_NAME}` is a name from `Chart.yaml`
 and `${CHART_VERSION}` is a version detected by semantic-release.
 
+### `version` and `appVersion` in Chart.yaml
+
+qwe asd zxc
+
 ## Configuration
 
 ### Environment variables
