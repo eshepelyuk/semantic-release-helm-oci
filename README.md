@@ -45,14 +45,14 @@ plugins:
 
 ## Configuration
 
-### Credentials
+### Environment variables
 
-Credentials for OCI registry are passed through environment variables:
+Credentials for OCI registry authentifications are passed through environment variables:
 
-```bash
-export REGISTRY_USERNAME=<registry username value>
-export REGISTRY_PASSWORD=<registry password value>
-```
+| Variable            | Description                         |
+| ------------------- | ----------------------------------- |
+| `REGISTRY_USERNAME` | **Required** OCI registry username. |
+| `REGISTRY_PASSWORD` | **Required** OCI registry password. |
 
 ### Options
 
