@@ -35,7 +35,7 @@ The plugin can be configured in the [**semantic-release** configuration file
 }
 ```
 
-##### **`.releaserc.yaml`**
+**`.releaserc.yaml`**
 ```yaml
 plugins:
   -
