@@ -84,6 +84,6 @@ Credentials for OCI registry authentification are passed through environment var
 
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
-| `registry`        | **Required.** Registry URL with `oci://` schema,<br>e.g. `oci://ghcr.io/eshepelyuk/abc`. | string    | undefined |
-| `skipAppVersion`  | Don't update `appVersion` in Chart.yaml.                          | boolean   | false     |
+| `registry`        | **Required.** Registry URL with `oci://` schema,<br>e.g. `oci://ghcr.io/eshepelyuk/abc`.                      | string    | undefined |
+| `skipAppVersion`  | Use `appVersion` from Chart.yaml when packaging chart, instead of using **semantic-release** `nextVersion` | boolean   | false     |
 
