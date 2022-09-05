@@ -1,14 +1,14 @@
 {
-  "name": "@eshepelyuk/semantic-release-helm-oci",
+  "name": "@edgefarm/semantic-release-helm-oci",
   "version": "0.0.0",
   "description": "semantic-release plugin for publishing Helm charts to OCI registries",
-  "repository": "github:eshepelyuk/semantic-release-helm-oci",
+  "repository": "github:edgefarm/semantic-release-helm-oci",
   "main": "index.js",
   "files": [
     "index.js",
     "lib/**/*.js"
   ],
-  "author": "Ievgenii Shepeliuk <eshepelyuk@gmail.com>",
+  "author": "Armin Schlegel <armin.schlegel@gmx.de>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
