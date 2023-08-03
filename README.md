@@ -56,7 +56,7 @@ It's recommended to use Git tags for maintaining release versions.
 The plugin leverages `--version` and `--app-version` when calling `helm package`
 to manage published chart versions and not rely on `Chart.yaml`.
 
-There's two usage scanarios for this plugin:
+There's two usage scenarios for this plugin:
 
 1. The chart and the application are co-located in the same repository.
 
@@ -73,7 +73,7 @@ There's two usage scanarios for this plugin:
 
 ### Environment variables
 
-Credentials for OCI registry authentification are passed through environment variables:
+Credentials for OCI registry authentication are passed through environment variables:
 
 | Variable            | Description                          |
 | ------------------- | ------------------------------------ |
