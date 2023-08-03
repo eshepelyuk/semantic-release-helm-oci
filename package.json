@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "semantic-release plugin for publishing Helm charts to OCI registries",
   "repository": "github:eshepelyuk/semantic-release-helm-oci",
-  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
   "files": [
     "index.js",
     "lib/**/*.js"
