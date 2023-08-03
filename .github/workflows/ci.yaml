@@ -1,5 +1,4 @@
-name: Continous Integration
-
+name: Build
 on:
   pull_request:
     branches:
@@ -10,12 +9,14 @@ on:
     paths-ignore:
       - '*.md'
       - '.github/workflows/release.yaml'
-
 jobs:
-  ci_job:
-    name: CI Job
+  build_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: npm install
-      - run: npx semantic-release -p semantic-release-commitlint
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 20
+      - uses: wagoid/commitlint-github-action@v5
+        with:
+          configFile: .commitlintrc.yml
+          token: ${{ secrets.GITHUB_TOKEN }}

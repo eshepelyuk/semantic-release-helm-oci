@@ -1,19 +1,15 @@
 name: Release
 on:
   workflow_dispatch
-
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
 jobs:
-  release_job:
-    name: Release Job
+  rel_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: |
-          npm i
-          npx semantic-release
+      - uses: bahmutov/npm-install@v1
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
