@@ -12,7 +12,7 @@ for publishing Helm charts to OCI compatible registries.
 | `verifyConditions` | Verify plugin configuration and login to Helm registry.  |
 | `prepare`          | Package Helm chart to local folder.                      |
 | `publish`          | Publish Helm chart to OCI registry.                      |
-
+| `chartPath`        | Chart directory, where the _Chart.yaml_ is located.      |
 ## Installation
 
 ```bash
