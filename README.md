@@ -12,7 +12,7 @@ for publishing Helm charts to OCI compatible registries.
 | `verifyConditions` | Verify plugin configuration and login to Helm registry.  |
 | `prepare`          | Package Helm chart to local folder.                      |
 | `publish`          | Publish Helm chart to OCI registry.                      |
-| `chartPath`        | Chart directory, where the _Chart.yaml_ is located.      |
+
 ## Installation
 
 ```bash
@@ -50,7 +50,7 @@ and `${CHART_VERSION}` is a version detected by semantic-release.
 
 ### `version` and `appVersion` in Chart.yaml
 
-Plugin intentionally doesn't modify Chart.yaml during the release.
+Plugin intentionally doesn't modify `Chart.yaml` during the release.
 It's recommended to use Git tags for maintaining release versions.
 
 The plugin leverages `--version` and `--app-version` when calling `helm package`
@@ -66,8 +66,8 @@ There's two usage scenarios for this plugin:
 1. The chart is maintained separately from the application.
 
     In this case `appVersion` is modified outside of chart's release process
-    and must be updated manually in Chart.yaml. To prevent plugin from setting `--app-version` -
-    use `skipAppVersion` option.
+    and must be updated manually in `Chart.yaml`.
+    To prevent plugin from setting `--app-version` - use `skipAppVersion` option.
 
 ## Configuration
 
@@ -85,5 +85,5 @@ Credentials for OCI registry authentication are passed through environment varia
 | Option            | Description                                                       | Type      | Default   |
 | ------------------|-------------------------------------------------------------------|-----------|-----------|
 | `registry`        | **Required.** Registry URL with `oci://` schema,<br>e.g. `oci://ghcr.io/eshepelyuk/abc`.                      | string    | undefined |
-| `skipAppVersion`  | Use `appVersion` from Chart.yaml when packaging chart, instead of using **semantic-release** `nextVersion` | boolean   | false     |
-
+| `skipAppVersion`  | Use `appVersion` from `Chart.yaml` when packaging chart, instead of using **semantic-release** `nextVersion`  | boolean   | false     |
+| `chartPath`       | Directory, where `Chart.yaml` is located.                                                                     | string    | `.`       |
