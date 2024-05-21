@@ -1,5 +1,9 @@
 # semantic-release-helm-oci
 
+> [!WARNING]
+> This project is in deprecation mode and needs a mantainer.
+> Please check https://github.com/eshepelyuk/semantic-release-helm-oci/issues/9
+ 
 [semantic-release](https://github.com/semantic-release/semantic-release) plugin
 for publishing Helm charts to OCI compatible registries.
 
